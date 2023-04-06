@@ -1,5 +1,30 @@
 # 이명규 201930121
 
+
+## 6주차 23.04.06
+### 컨포넌트 추출
++ 여려개 컨포넌트로 분리 가능
++ 부모 컨피포에서 일부 추출해서 새로운 컨포넌트 생성 가능
++ 1컨포 = 1 기능 이상적 기능
++ <span style="color:pink"> 나 자신의 프로필을 만드는 컨포넌트 생성  - index.js / chapter05 내용 추가</span>
+
+### <span style="color:yellow" >6장</span>
+### 1.State
++ 리액트 컨포넌트의 상태(컨포넌트의 데이터) 의미
++ 세부적으로는 변경 가능한 데이터
++ State가 변하면 다시 렌더링이 되므로 렌더링과 관련된 값만 state에 포함 시켜야함
++ 자바스크립트의 객체일 뿐!
++ 변경시 setstate() 사용
+
+### 2. 셍명주기
++ 컴포넌트의 생성 시점 , 사용시점 , 종료 시점
++ constructor 실행 -> 컨포넌트 생성
++ 생성 직후 <span style="color:pink" >conpoentDidMount()</span> 함수 실행
++ 소멸 전까지 여러번 랜더링
++ 랜더링 = props, setState(), forceUpdate() 에 의해 상태 변경
++ 랜더링 이후 = <span style="color:pink" >componentDinUpdate()</span> 함수 호출
++ 마지막 컨포넌트 언마운트 시 = <span style="color:pink" >compomentWillUnmount()</span> 함수 호출
+
 ## 5주차 23.03.30
 ### 1. 엘리먼트
 + Elements are the smallest building blocks of React apps = 리액트 앱의 가장 작은 빌딩 블록
