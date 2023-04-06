@@ -4,13 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import CommentList from "./chapter_05/CommentList"
+import NotificationList from './chapter_06/NotificationList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <CommentList />
+    <NotificationList />
   </React.StrictMode>
 );
+
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//       <CommentList />
+//   </React.StrictMode>
+// );
 
 // import Clock from './chapter_04/clock'
 // setInterval(() => {
