@@ -1,5 +1,30 @@
 # 이명규 201930121
 
+## 7주차 23.04.13
+### <span style="color:yellow" >7장- 훅 </span>
+### 1. 훅
++ 클래스 컨포넌트에 생성자에서 state 정의, setState()함수=> state업데이트 / 함수형 컨포넌트 별도 state정의, 컨포넌트 생성주기 맞춰 어떤 코드 실행되도록 못함
++ 함수형 컨포넌트에서 state / 별도 생명주기 함수 기능 사용케 해주기 위해서 만들어진 기능 = <span style="color:red">HOOK</span>
++ 함수형 컨포넌트도 훅 사용 시 = 클래스 컴포넌트 기능 동일 사용 구현케 됨
++ useState = 함수형 컨포넌트에서 state을 사용할 수 있게 해주는 HOOK
+
+#### useEffect 
++ 사이드 이펙트 수행
++ 부수적으로 다른 효과 있는 것! = 랜더링 외 실행 하는 부수적 코드
++ ex 네트워크 리퀘스트. DOM수동조작, 로깅
++ 첫 파라미터 = 이펙트 함수 , 두번째 파라미터 = 의존성 배열
+        <br>useEffect(이펙트함수, 의존성배열);
+#### useMemo
++ useMeMO() / Memoizde value 리턴
+#### useCallback
+#### useRef
++ 레퍼런스(특정 컨포넌트 접근 가능 객체)를 사용하기 위한 훅
+
+### 2. 훅 규칙
++ 첫 규칙 = 최상의 레벨(최상위 컨포넌트) 에서만 호출해야한다
+<br> 반복문 , 조건문에서 사용x
++ 두번째 규칙 = 리액트 함수형 컨포넌트에서만 호출해야한다
+<br>일반 자바스크립트 사용x
 
 ## 6주차 23.04.06
 ### 컨포넌트 추출
@@ -24,6 +49,8 @@
 + 랜더링 = props, setState(), forceUpdate() 에 의해 상태 변경
 + 랜더링 이후 = <span style="color:pink" >componentDinUpdate()</span> 함수 호출
 + 마지막 컨포넌트 언마운트 시 = <span style="color:pink" >compomentWillUnmount()</span> 함수 호출
+
+
 
 ## 5주차 23.03.30
 ### 1. 엘리먼트

@@ -42,12 +42,12 @@ function Comment(Props) {
                 style={styles.image}
                 />
             </div>
-        <div style={styles.contentContainer}>
-            <span style={styles.nameText}>이명규</span>
-            <span style={styles.commentText}>
-                제가 만든 첫 컴포넌트입니다. 
-            </span>
-        </div>
+            <div style={styles.contentContainer}>
+                <span style={styles.nameText}>{Props.name}</span>
+                <span style={styles.commentText}>{Props.nameText}
+                    제가 만든 첫 컴포넌트입니다. 
+                </span>
+            </div>
         </div>
     );
 }

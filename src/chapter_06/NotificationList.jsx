@@ -56,7 +56,7 @@ const reservedNotifications = [
         return (
             <div>
                 {this.state.notifications.map((Notification) => {
-                    return <Notification message={Notification.message} />;
+                    return<Notification message={Notification.message} />;
 
                 })}
             </div>
