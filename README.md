@@ -1,5 +1,30 @@
 # 이명규 201930121
 
+
+## 9주차 23.04.27
+### <span style="color:yellow" >8장- 이벤트 핸들러 </span>
+#### <span style="color:green">이벤트 핸들러 추가하는 방법 ? </span>
+- 버튼 클릭 시 handleClick()함수 호출
+- bind 사용x 시 this.handleClick은 글로벌 스코프에서 호출
+- bind 시용하지 않기 위해서는 화살표 사용(p.250)
+- 클래서형 => 함수형
+     1. 함수 안에 함수로 정의
+     2. row function을 사용해서 정의
+- 함수형에서는 onClick에서 바로 handleClick을 넘기면 됨
+
+#### <span style="color:green">Arguments 전달하기</span>
++ 함수 정의 시 Parameter / 매개변수, 사용 시는 Argument / 인자라 부름
++ 이벤트 핸들러에 매개변수 전달 하는 경우 多
++ event라는 매개변수 = react에서의 이벤트 객체 의미
++ p.254 이벤트 핸들러 매개변수 전달 참고
+
+### <span style="color:yellow" >9장- 조건부 렌더링 </span>
+#### <span style="color:green">조건부 렌더링이란?</span>
++ props로 받은 isLoggedIn 이 true이면 UserGreetind 을 , false면 GuestGreeting return => 이 같은 렌더링 = 조건부 랜더링
+#### <span style="color:green">엘리멘트 변수</span>
++ 렌더링 해야할 컴포넌트를 변수처럼 사용한는 것 = 엘리멘탈 변수 (p.272 참고)
+## 8주차 <중간고사>
+
 ## 7주차 23.04.13
 ### <span style="color:yellow" >7장- 훅 </span>
 ### 1. 훅
