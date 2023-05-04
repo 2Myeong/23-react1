@@ -1,5 +1,32 @@
 # 이명규 201930121
 
+## 10주차 23.05.04
+### <span style="color:yellow" >10장- 리스트와 키 </span>
+### <span style="color:green" >리스트와 키란 무엇인가 </span>
++ 리스트 = 변수나 객체 하나로 묶어 놓은 배열 / 키 = 각 객체나 아이템 구분 도와주는 고유 값
++ 리엑트에서 배열과 키를 사용하는 반복되는 다수의 엘리먼트를 쉽게 랜더랑 가능
+### <span style="color:green" >다수의 컨포넌트 렌더링하기 </span>
++ 컨포넌트를 화면에 반복적으로 나타내야 할 경우 엘리먼트를 map() 함수를 이용해 랜더링
+### <span style="color:green" >리스트와 키 </span>
++ 리스트에서의 키 = 아이템을 구별하는 고유 문자열
++ 리스트에서 아이템이 변경, 추가, 제거의 구분을 위해 사용
++ 키는 같은 리스트에 있는 엘리언트 사이에서만 교유한 값이면 됨
+
+### <span style="color:yellow" >11장 - 폼 </span>
+### <span style="color:green" >폼이란 </span>
++ 폼은 기본적 사용자로부터 입력을 받기 위한 양식에서 사용
+### <span style="color:green" >제어 컨포넌트 </span>
++ 사용자가 입력한 값에 접근하고 제어할 수 있도록 해주는 컴포넌트 / 모든 데이터를 state에서 관리
+### <span style="color:green" >textarea 태그 </span>
++ REACT에서는 state 를 통해 태그의 value라는 attribute를 변경하여 텍스트를 표시
+### <span style="color:green">File input 태그 </span>
++ 그 값이 읽기 전용이므로 리엑트에서는 비제이 컴포넌트 됨
+
+
+
+
+
+
 
 ## 9주차 23.04.27
 ### <span style="color:yellow" >8장- 이벤트 핸들러 </span>
