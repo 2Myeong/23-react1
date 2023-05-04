@@ -23,6 +23,17 @@
 + props로 받은 isLoggedIn 이 true이면 UserGreetind 을 , false면 GuestGreeting return => 이 같은 렌더링 = 조건부 랜더링
 #### <span style="color:green">엘리멘트 변수</span>
 + 렌더링 해야할 컴포넌트를 변수처럼 사용한는 것 = 엘리멘탈 변수 (p.272 참고)
+#### <span style="color:green">인라인 조건</span>
++ 필요한 곳에 직접 넣이 사용 방식
+    1. 인라인if
+        + if 사용x 하고 동일 효과을 내기 위해 &&논리연산자 사용
+    2. 인라인 if-else
+        + 삼항 연산자를 사용 조건문 ? 참일 경우 : 거짓일 경우
+        + 문자열 혹은 엘리먼트를 넣어서 사용 가능
+#### <span style="color:green">컨포넌트 렌더링 막기</span>
++ 랜더링하고 싶지 않을 때는 null 리턴하면 됨!
+
+
 ## 8주차 <중간고사>
 
 ## 7주차 23.04.13
