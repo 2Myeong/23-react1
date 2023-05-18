@@ -1,4 +1,49 @@
 # 이명규 201930121
+## 12주차 23.05.18
+### <span style="color:yellow" >14장- 컨텍스트 </span>
++ 컨텍스트는 리액트 컴포넌트들 사이에서 데이트를 기존의 props를 통해 전달하는 방식 대신 컴포넌트 트리를 통해 곧바로 컴포넌트에 전달하는 새로운 방식을 제공
++ 어떤 컴포넌트에되 쉽게 데이터 접근 가능
++ 따로따로 props에 전달 대신 데이터를 필요로 하는 컴포넌트에 곧바로 전달 가능
+
++ 주로 로그인 여부 / 로그인 정보 / UI테마 등에 사용
++ props를 통해 데이터를 전달하는 기존 방식 = 실제 데이터를 사용하는 컴포넌트까지의 길이가 길어 복잡해짐 + 반복적 코드 재사용으로 비효율성, 가독성 하락 => 컨텍스트 사용시 해결가능
+### <span style="color:green" >컨텍스트 사용하기 전 고려부분</span>
++ 컴포넌트와 컨텍ㄷ스트가 연동되면 재사용성 떨어짐
++ 다른 레벨의 많은 컴포넌트가 데이터를 필요로 하는 경우 아니면 props 통한 데이터 절달 방식이 적합
+### <span style="color:green" >컨텍스트API</span>
+1. React createContext
+    + 컨텍스트를 생성하기 위한 함수
+    + 파라메타에는 기본값
+    + 하위 컴포넌트에서는 가장 가까운 상위 레벨의 provider로부터 컨텍스트를 받게 되지만, 만일 Privider을 찾을 수 없다면 기본값 사용
+2. Context Provider
+    + context provider 컴포넌트로 하위 컴포넌트를 감싸주면 모든 하위 컴포넌트들의 데이터에 접근 가능
+    + Provider 컴포넌트는 value라는 props => 이 props 가 하위 컴포넌트(cousumer)에 전달
+3. Class contextType
+    + Provider 하위에 있는 클래스 컴포넌트에서 컨텍스트의 데이터에 접근하기 위해 사용
+    + 더이상 사용 x 
+4. Context Consumer
+    + 함수형 컴포넌트에서 context consumer 을 사용하여 컨텍스트르 구독 가능
+    + 컴포넌트의 지식으로 함수가 올 수 있는데 이것을 function as a child라 부름
+    + Context consumer로 감싸면 자식으로 들어가는 함수가 현재 컨텍스트의 value을 받아 리액트 노트로 리턴
+    + 함수로 전달되는 value = Provider의 vaule prop
+5. Context displayName
+    + 컨텍스트 객체는 displayName 이라는 문자열 속성 가짐
+
+### <span style="color:yellow" >13장- 합성 </span>
++ 여러개의 컴포넌트 합쳐서 새로운 컴포넌트를 만드는것
+1. Containment(담다, 포함하다, 격리하다)
+    + 특정 컴포넌트가 하위 컴포넌트를 포함하는 형태의 합성방법
+    + 컴포넌트에 따라서는 어떤 자식 엘리먼트가 들어올지 예상 가능
+    + 범용적 박스 역할을 하는 Sidebar / Diolog 같은 컴포넌트에서 자주 확인
+2. Specialization (특수화, 전문화)
+    + 웰컴 다이얼로그는 특별한 케이스
+    + 범욕적 개념을 구별이 되게 구체화하는 것을 특수화
+    + 객체지향 언어에서는 상속을 사용하여 특수화를 구현
+    + 리엑트 = 합성을 사용해 특수화 구현
+3. Containment + Specialization 같이 사용
+
+
+
 ## 11주차 23.05.11
 ### <span style="color:yellow" >12장- state 끌어올리기 </span>
 ### <span style="color:green" >입력 컴포넌트 추출하기</span>
